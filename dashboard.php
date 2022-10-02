@@ -9,7 +9,7 @@
         .SchoolClass
         {    
             padding: 20px;border: 1px dotted #000;
-            margin: 10px; display: inline-block;
+            margin: 10px;display: inline-block;
             cursor:pointer;
         }
         .SchoolClass:hover
@@ -29,16 +29,27 @@
 <body>
     <div style="text-align: center;user-select: none;">
         <h1>Zat Academy Dashboard</h1>
-        <hr/>
-        <br/>
-        <br/>
+        
+        <hr/><br/><br/>
+
+
         <p class="fontP"> Write The New Link</p>
         <input type="text" style="padding: 30px;width:45%"/>
 
         <br/><br/> <br/><br/>
+
         <p class="fontP">Select The Classes :</p>
+
         <br/>
-        <span class="SchoolClass">Class E : 1</span>
+
+<!--  -->
+<div style="float:left;width:28%;height:400px">
+
+<p>hello</p>
+</div>
+<!--  -->
+<div style="float:right;width:69%;height:400px">
+<span class="SchoolClass">Class E : 1</span>
         <span class="SchoolClass">Class E : 2</span>
         <span class="SchoolClass">Class E : 3</span>
         <span class="SchoolClass">Class E : 4</span>
@@ -52,7 +63,12 @@
         <br/>
 
         <span class="SchoolClass">Class H : 1</span>
-        
+
+</div>
+<!--  -->
+<div style="clear:both;"></div>
+<!--  -->
+
         <br/><br/><br/>
         <button>Save</button>
     </div>
