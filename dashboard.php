@@ -13,7 +13,7 @@
             padding: 20px;border: 1px dotted #000;
             display: inline-block;cursor:pointer;
         }
-        .SchoolClass:hover
+        .school:hover
         {
             border: 1px solid blue;
             background-color: #92a196;
@@ -35,6 +35,8 @@
             color:white;
             background-color: red;
         }
+
+
     </style>
 </head>
 <body>
@@ -61,12 +63,12 @@
     </div>
     <!--  -->
     <div style="float:right;width:69%;height:125px">
-    <span class="SchoolClass" onclick="SchoolClass(1,this)">Class E : 1</span>
-    <span class="SchoolClass" onclick="SchoolClass(2,this)">Class E : 2</span>
-    <span class="SchoolClass" onclick="SchoolClass(3,this)">Class E : 3</span>
-    <span class="SchoolClass" onclick="SchoolClass(4,this)">Class E : 4</span>
-    <span class="SchoolClass" onclick="SchoolClass(5,this)">Class E : 5</span>
-    <span class="SchoolClass" onclick="SchoolClass(6,this)">Class E : 6</span>
+    <span class="SchoolClass school" onclick="SchoolClass(1,this)">Class E : 1</span>
+    <span class="SchoolClass school" onclick="SchoolClass(2,this)">Class E : 2</span>
+    <span class="SchoolClass school" onclick="SchoolClass(3,this)">Class E : 3</span>
+    <span class="SchoolClass school" onclick="SchoolClass(4,this)">Class E : 4</span>
+    <span class="SchoolClass school" onclick="SchoolClass(5,this)">Class E : 5</span>
+    <span class="SchoolClass school" onclick="SchoolClass(6,this)">Class E : 6</span>
     </div>
     <!--  -->
     <div style="clear:both;"></div>
@@ -80,9 +82,9 @@
     </div>
     <!--  -->
     <div style="float:right;width:69%;height:70px">
-    <span class="SchoolClass" onclick="SchoolClass(7,this)">Class E : 1</span>
-    <span class="SchoolClass" onclick="SchoolClass(8,this)">Class E : 2</span>
-    <span class="SchoolClass" onclick="SchoolClass(9,this)">Class E : 3</span>
+    <span class="SchoolClass school" onclick="SchoolClass(7,this)">Class E : 1</span>
+    <span class="SchoolClass school" onclick="SchoolClass(8,this)">Class E : 2</span>
+    <span class="SchoolClass school" onclick="SchoolClass(9,this)">Class E : 3</span>
     </div>
     <!--  -->
     <div style="clear:both;"></div>
@@ -95,7 +97,7 @@
     </div>
     <!--  -->
     <div style="float:right;width:69%;">
-    <span class="SchoolClass" onclick="SchoolClass(10,this)">Class E : 1</span>
+    <span class="SchoolClass school" onclick="SchoolClass(10,this)">Class E : 1</span>
     </div>
     <!--  -->
     <div style="clear:both;"></div>
@@ -105,7 +107,7 @@
 
 
         <br/><br/><br/>
-        <button>Save</button>
+        <button onclick="showme()">Save</button>
     </div>
 
 
@@ -118,10 +120,15 @@ function SchoolClass(ClassNumber,nnm)
 
 
 nnm.classList.toggle("schoolACTIVE");
+nnm.classList.toggle("school");
+
 
 if(!(ActiveClasses.includes(ClassNumber)))
     ActiveClasses.push(ClassNumber);
-
+else
+{
+    ActiveClasses.splice(ActiveClasses.indexOf(ClassNumber),1);
+}
 
 
 
@@ -130,6 +137,11 @@ console.log(ActiveClasses);
 }
 
 
+function showme()
+{
+    var whatIS = ActiveClasses.sort(function(a, b){return a - b});
+    alert(whatIS);
+}
 
 </script>
 </body>
