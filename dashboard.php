@@ -4,6 +4,8 @@
     <meta charset="utf-8"/>
     <title>That Academy</title>
     <link rel="icon" href="icon.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+
     
     <style>
         .SchoolClass
@@ -14,6 +16,8 @@
         .SchoolClass:hover
         {
             border: 1px solid blue;
+            background-color: #92a196;
+            color:white;
         }
 
         button
@@ -32,8 +36,8 @@
         <hr/><br/>
 
 
-        <p class="fontP"> Write The New Link</p>
-        <input type="text" style="padding: 30px;width:45%"/>
+        <p class="fontP"> Write The New Link :</p>
+        <input type="text" style="padding: 25px;width:40%"/>
 
         <br/><br/>
 
@@ -42,12 +46,13 @@
 
 <div style="width:600px;margin:auto;border:1px solid #000;padding:15px">
     <!--  -->
-    <div style="float:left;width:28%;">
+    <div style="float:left;width:28%;height:125px">
 
-    <p>hello</p>
+    <p style="padding-top:50px">Elementary</p>
+
     </div>
     <!--  -->
-    <div style="float:right;width:69%;">
+    <div style="float:right;width:69%;height:125px">
     <span class="SchoolClass">Class E : 1</span>
     <span class="SchoolClass">Class E : 2</span>
     <span class="SchoolClass">Class E : 3</span>
@@ -61,12 +66,12 @@
     <!--  -->
 
     <!--  -->
-    <div style="float:left;width:28%;">
+    <div style="float:left;width:28%;height:70px">
 
-    <p>hello</p>
+    <p>Middle</p>
     </div>
     <!--  -->
-    <div style="float:right;width:69%;">
+    <div style="float:right;width:69%;height:70px">
     <span class="SchoolClass">Class E : 1</span>
     <span class="SchoolClass">Class E : 2</span>
     <span class="SchoolClass">Class E : 3</span>
@@ -78,7 +83,7 @@
     <!--  -->
     <div style="float:left;width:28%;">
 
-    <p>hello</p>
+    <p>High</p>
     </div>
     <!--  -->
     <div style="float:right;width:69%;">
