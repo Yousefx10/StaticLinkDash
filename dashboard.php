@@ -12,11 +12,12 @@
         {    
             padding: 20px;border: 1px dotted #000;
             display: inline-block;cursor:pointer;
+            margin: 2px;
         }
         .school:hover
         {
             border: 1px solid blue;
-            background-color: #92a196;
+            background-color: #bab4b4;
             color:white;
         }
 
@@ -33,7 +34,8 @@
         .schoolACTIVE
         {
             color:white;
-            background-color: red;
+            background-color: #187432;
+            border:2px solid #000;
         }
 
 
@@ -47,7 +49,7 @@
 
 
         <p class="fontP"> Write The New Link :</p>
-        <input type="text" style="padding: 25px;width:40%"/>
+        <input type="text" style="padding: 25px;width:40%;font-size:22px"/>
 
         <br/><br/>
 
@@ -58,21 +60,21 @@
     <!--  -->
     <div style="float:left;width:28%;height:125px">
 
-    <p style="padding-top:50px">Elementary</p>
+    <p style="padding-top:30px">Elementary</p>
 
     </div>
     <!--  -->
     <div style="float:right;width:69%;height:125px">
-    <span class="SchoolClass school" onclick="SchoolClass(1,this)">Class E : 1</span>
-    <span class="SchoolClass school" onclick="SchoolClass(2,this)">Class E : 2</span>
-    <span class="SchoolClass school" onclick="SchoolClass(3,this)">Class E : 3</span>
-    <span class="SchoolClass school" onclick="SchoolClass(4,this)">Class E : 4</span>
-    <span class="SchoolClass school" onclick="SchoolClass(5,this)">Class E : 5</span>
-    <span class="SchoolClass school" onclick="SchoolClass(6,this)">Class E : 6</span>
+    <span class="SchoolClass school" onclick="SchoolClass(1,this)">Class E : 0</span>
+    <span class="SchoolClass school" onclick="SchoolClass(2,this)">Class E : 0</span>
+    <span class="SchoolClass school" onclick="SchoolClass(3,this)">Class E : 0</span>
+    <span class="SchoolClass school" onclick="SchoolClass(4,this)">Class E : 0</span>
+    <span class="SchoolClass school" onclick="SchoolClass(5,this)">Class E : 0</span>
+    <span class="SchoolClass school" onclick="SchoolClass(6,this)">Class E : 0</span>
     </div>
     <!--  -->
     <div style="clear:both;"></div>
-    <br/>
+    <br/><br/>
     <!--  -->
 
     <!--  -->
@@ -82,22 +84,22 @@
     </div>
     <!--  -->
     <div style="float:right;width:69%;height:70px">
-    <span class="SchoolClass school" onclick="SchoolClass(7,this)">Class E : 1</span>
-    <span class="SchoolClass school" onclick="SchoolClass(8,this)">Class E : 2</span>
-    <span class="SchoolClass school" onclick="SchoolClass(9,this)">Class E : 3</span>
+    <span class="SchoolClass school" onclick="SchoolClass(7,this)">Class E : 0</span>
+    <span class="SchoolClass school" onclick="SchoolClass(8,this)">Class E : 0</span>
+    <span class="SchoolClass school" onclick="SchoolClass(9,this)">Class E : 0</span>
     </div>
     <!--  -->
     <div style="clear:both;"></div>
     <br/>
     <!--  -->
     <!--  -->
-    <div style="float:left;width:28%;">
+    <div style="float:left;width:28%;height:70px">
 
     <p>High</p>
     </div>
     <!--  -->
-    <div style="float:right;width:69%;">
-    <span class="SchoolClass school" onclick="SchoolClass(10,this)">Class E : 1</span>
+    <div style="float:right;width:69%;height:70px">
+    <span class="SchoolClass school" onclick="SchoolClass(10,this)">Class E : 0</span>
     </div>
     <!--  -->
     <div style="clear:both;"></div>
@@ -106,7 +108,7 @@
 
 
 
-        <br/><br/><br/>
+        <br/><br/>
         <button onclick="showme()">Save</button>
     </div>
 
