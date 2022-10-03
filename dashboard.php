@@ -88,7 +88,7 @@ $con -> multi_query($sql);
 
         <p class="fontP"> Write The New Link :</p>
         <input type="text" id="inputlink"style="padding: 20px;width:36%;font-size:22px" oninput="checkBUTTON(1,this)"/>
-        <button style="height:71px;width:71px;" onclick="document.getElementById('inputlink').value='';Btn.style.display='none';">Delete</button>
+        <button style="height:71px;width:71px;" onclick="document.getElementById('inputlink').value='';Btn.style.display='none';Estatus2=false;">Delete</button>
         <br/><br/>
 
         <p class="fontP">Select The Classes :</p>
