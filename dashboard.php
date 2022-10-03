@@ -12,12 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $sql="";
 $theDATA = preg_split("/\,/", $selectedCLASS); 
 foreach ($theDATA as $item) {
-    $sql.="UPDATE onlineclasses SET link_linkedto='$newLINK' WHERE link_id='$item'";
-    $sql.=";\n";
+    $sql.="UPDATE onlineclasses SET link_linkedto='$newLINK' WHERE link_id='$item';";
 }
-
-echo $sql;
-
 
   
 $con -> multi_query($sql);
@@ -29,13 +25,6 @@ $con -> multi_query($sql);
 }
 
 ?>
-
-
-
-
-
-
-
 
 
 <!DOCTYPE html>
@@ -89,7 +78,7 @@ $con -> multi_query($sql);
 
 
         <p class="fontP"> Write The New Link :</p>
-        <input type="text" id="inputlink"style="padding: 25px;width:40%;font-size:22px"/>
+        <input type="text" id="inputlink"style="padding: 25px;width:40%;font-size:22px" oninput="checkBUTTON(1,this)"/>
 
         <br/><br/>
 
@@ -149,7 +138,7 @@ $con -> multi_query($sql);
 
 
         <br/><br/>
-        <button onclick="showme()">Save</button>
+        <button style="display:none"onclick="showme()" id="mainButton">Save</button>
     </div>
 
 <form action="" method="post" id="form_data">
@@ -177,8 +166,13 @@ else
 
 
 
+if (ActiveClasses.length === 0)
+    Estatus1 = false;
+else
+    Estatus1 = true;
 
-console.log(ActiveClasses);
+    checkBUTTON(2);
+//console.log(ActiveClasses);
 }
 
 
@@ -192,6 +186,28 @@ function showme()
 
 }
 
+var Estatus1=false;
+var Estatus2=false;
+
+
+var Btn= document.getElementById("mainButton");
+function checkBUTTON(typeEE,whatE)
+{
+    if(typeEE==1)
+    {
+        if(whatE.value.length>0)
+        Estatus2=true;
+        else
+        Estatus2=false;
+    }
+if(Estatus1 && Estatus2)
+    Btn.style.display="inline-block";
+else
+    Btn.style.display="none";
+
+
+console.log("yes");
+}
 </script>
 </body>
 </html>
