@@ -32,7 +32,7 @@
 
         .schoolACTIVE
         {
-            color:green;
+            color:white;
             background-color: red;
         }
     </style>
@@ -61,12 +61,12 @@
     </div>
     <!--  -->
     <div style="float:right;width:69%;height:125px">
-    <span class="SchoolClass" onclick="SchoolClass(1)">Class E : 1</span>
-    <span class="SchoolClass" onclick="SchoolClass(2)">Class E : 2</span>
-    <span class="SchoolClass" onclick="SchoolClass(3)">Class E : 3</span>
-    <span class="SchoolClass" onclick="SchoolClass(4)">Class E : 4</span>
-    <span class="SchoolClass" onclick="SchoolClass(5)">Class E : 5</span>
-    <span class="SchoolClass" onclick="SchoolClass(6)">Class E : 6</span>
+    <span class="SchoolClass" onclick="SchoolClass(1,this)">Class E : 1</span>
+    <span class="SchoolClass" onclick="SchoolClass(2,this)">Class E : 2</span>
+    <span class="SchoolClass" onclick="SchoolClass(3,this)">Class E : 3</span>
+    <span class="SchoolClass" onclick="SchoolClass(4,this)">Class E : 4</span>
+    <span class="SchoolClass" onclick="SchoolClass(5,this)">Class E : 5</span>
+    <span class="SchoolClass" onclick="SchoolClass(6,this)">Class E : 6</span>
     </div>
     <!--  -->
     <div style="clear:both;"></div>
@@ -80,9 +80,9 @@
     </div>
     <!--  -->
     <div style="float:right;width:69%;height:70px">
-    <span class="SchoolClass" onclick="SchoolClass(7)">Class E : 1</span>
-    <span class="SchoolClass" onclick="SchoolClass(8)">Class E : 2</span>
-    <span class="SchoolClass" onclick="SchoolClass(9)">Class E : 3</span>
+    <span class="SchoolClass" onclick="SchoolClass(7,this)">Class E : 1</span>
+    <span class="SchoolClass" onclick="SchoolClass(8,this)">Class E : 2</span>
+    <span class="SchoolClass" onclick="SchoolClass(9,this)">Class E : 3</span>
     </div>
     <!--  -->
     <div style="clear:both;"></div>
