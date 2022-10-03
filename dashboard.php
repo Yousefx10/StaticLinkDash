@@ -159,10 +159,10 @@ $con -> multi_query($sql);
 <div style="display:none;background-color:green;color:white;width:600px;margin:auto;padding:20px" id="page2">
         <h2>Link Chanded Successfully For This Classes :</h2>
         
-        <div id="affectedClasses">
+        <div id="affectedClasses" style="font-size:25px">
 
         </div>
-
+        <br/><br/><br/>
         <a href="" style="color:white;">Back To Main Page</a>
 </div>
 
@@ -203,7 +203,7 @@ function showme()
     //alert(whatIS);
    document.getElementById("forminput1").value = document.getElementById("inputlink").value;
    document.getElementById("forminput2").value = whatIS;
-    document.getElementById("form_data").submit();
+   document.getElementById("form_data").submit();
 
 }
 
@@ -237,7 +237,43 @@ else
 
 function affeClass(arr)
 {
-document.getElementById("affectedClasses").innerHTML+="\n"+arr;
+var resUlt;
+switch(arr)
+{
+        case 1:
+        resUlt="The Class One";
+        break;
+        case 2:
+        resUlt="The Class Two";
+        break;
+        case 3:
+        resUlt="The Class Three";
+        break;
+        case 4:
+        resUlt="The Class Four";
+        break;
+        case 5:
+        resUlt="The Class Five";
+        break;
+        case 6:
+        resUlt="The Class Six";
+        break;
+        case 7:
+        resUlt="The Class Seven";
+        break;
+        case 8:
+        resUlt="The Class Eight";
+        break;
+        case 9:
+        resUlt="The Class Nine";
+        break;
+        case 10:
+        resUlt="The Class Ten";
+        break;
+}
+
+
+document.getElementById("affectedClasses").innerHTML+="<br/>- ["+resUlt+"]<br/>";
 
 
 }
