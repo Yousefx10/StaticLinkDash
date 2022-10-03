@@ -158,7 +158,7 @@ $con -> multi_query($sql);
 
 
 <div style="display:none;background-color:green;color:white;width:600px;margin:auto;padding:20px" id="page2">
-        <h2>Link Chanded Successfully For This Classes :</h2>
+        <h2>Link Changed Successfully For This Classes :</h2>
         
         <div id="affectedClasses" style="font-size:25px">
 
