@@ -9,8 +9,7 @@
         .SchoolClass
         {    
             padding: 20px;border: 1px dotted #000;
-            margin: 10px;display: inline-block;
-            cursor:pointer;
+            display: inline-block;cursor:pointer;
         }
         .SchoolClass:hover
         {
@@ -30,44 +29,69 @@
     <div style="text-align: center;user-select: none;">
         <h1>Zat Academy Dashboard</h1>
         
-        <hr/><br/><br/>
+        <hr/><br/>
 
 
         <p class="fontP"> Write The New Link</p>
         <input type="text" style="padding: 30px;width:45%"/>
 
-        <br/><br/> <br/><br/>
+        <br/><br/>
 
         <p class="fontP">Select The Classes :</p>
 
-        <br/>
 
-<!--  -->
-<div style="float:left;width:28%;height:400px">
+<div style="width:600px;margin:auto;border:1px solid #000;padding:15px">
+    <!--  -->
+    <div style="float:left;width:28%;">
 
-<p>hello</p>
+    <p>hello</p>
+    </div>
+    <!--  -->
+    <div style="float:right;width:69%;">
+    <span class="SchoolClass">Class E : 1</span>
+    <span class="SchoolClass">Class E : 2</span>
+    <span class="SchoolClass">Class E : 3</span>
+    <span class="SchoolClass">Class E : 4</span>
+    <span class="SchoolClass">Class E : 5</span>
+    <span class="SchoolClass">Class E : 6</span>
+    </div>
+    <!--  -->
+    <div style="clear:both;"></div>
+    <br/>
+    <!--  -->
+
+    <!--  -->
+    <div style="float:left;width:28%;">
+
+    <p>hello</p>
+    </div>
+    <!--  -->
+    <div style="float:right;width:69%;">
+    <span class="SchoolClass">Class E : 1</span>
+    <span class="SchoolClass">Class E : 2</span>
+    <span class="SchoolClass">Class E : 3</span>
+    </div>
+    <!--  -->
+    <div style="clear:both;"></div>
+    <br/>
+    <!--  -->
+    <!--  -->
+    <div style="float:left;width:28%;">
+
+    <p>hello</p>
+    </div>
+    <!--  -->
+    <div style="float:right;width:69%;">
+    <span class="SchoolClass">Class E : 1</span>
+    <span class="SchoolClass">Class E : 2</span>
+    <span class="SchoolClass">Class E : 3</span>
+    </div>
+    <!--  -->
+    <div style="clear:both;"></div>
+    <!--  -->
 </div>
-<!--  -->
-<div style="float:right;width:69%;height:400px">
-<span class="SchoolClass">Class E : 1</span>
-        <span class="SchoolClass">Class E : 2</span>
-        <span class="SchoolClass">Class E : 3</span>
-        <span class="SchoolClass">Class E : 4</span>
-        <span class="SchoolClass">Class E : 5</span>
-        <span class="SchoolClass">Class E : 6</span>
-        <br/>
-        <span class="SchoolClass">Class M : 1</span>
-        <span class="SchoolClass">Class M : 2</span>
-        <span class="SchoolClass">Class M : 3</span>
 
-        <br/>
 
-        <span class="SchoolClass">Class H : 1</span>
-
-</div>
-<!--  -->
-<div style="clear:both;"></div>
-<!--  -->
 
         <br/><br/><br/>
         <button>Save</button>
