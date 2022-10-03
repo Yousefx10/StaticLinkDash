@@ -4,23 +4,28 @@ include("connectSQL.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $UserName =  $_POST['val1'];
-    $last_name = $_POST['last_name'];
-    $sql = "INSERT INTO users  VALUES ('','$UserName')";
-    mysqli_query($con, $sql)
+    $newLINK =  $_POST['newLINK'];
+    $selectedCLASS = $_POST['selectedCLASS'];
+
+
+
+$sql="";
+$theDATA = preg_split("/\,/", $selectedCLASS); 
+foreach ($theDATA as $item) {
+    $sql.="UPDATE onlineclasses SET link_linkedto='$newLINK' WHERE link_id='$item'";
+    $sql.=";\n";
+}
+
+echo $sql;
+
+
+  
+$con -> multi_query($sql);
+
+//mysqli_query($con, $sql);
+
   // Close connection
-  CloseCon($conn);
-
-
-
-
-
-
-	if (empty($data)) {
-		echo "data is empty";
-	} else {
-		echo $data;
-	}
+  $con->close();
 }
 
 ?>
@@ -84,7 +89,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
         <p class="fontP"> Write The New Link :</p>
-        <input type="text" style="padding: 25px;width:40%;font-size:22px"/>
+        <input type="text" id="inputlink"style="padding: 25px;width:40%;font-size:22px"/>
 
         <br/><br/>
 
@@ -147,7 +152,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <button onclick="showme()">Save</button>
     </div>
 
-
+<form action="" method="post" id="form_data">
+    <input type="hidden" value="" id="forminput1" name="newLINK"/>
+    <input type="hidden" value="" id="forminput2" name="selectedCLASS"/>
+</form>
 
 <script>
 const ActiveClasses=[];
@@ -178,6 +186,10 @@ function showme()
 {
     var whatIS = ActiveClasses.sort(function(a, b){return a - b});
     alert(whatIS);
+   document.getElementById("forminput1").value = document.getElementById("inputlink").value;
+   document.getElementById("forminput2").value = whatIS;
+    document.getElementById("form_data").submit();
+
 }
 
 </script>

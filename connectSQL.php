@@ -7,5 +7,5 @@ $con=mysqli_connect("localhost","root","","thatacademy");
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
         }
         
-        $result = mysqli_query($con,"SELECT * FROM users WHERE Uid='$data' ");
+       // $result = mysqli_query($con,"SELECT * FROM users WHERE Uid='$data' ");
 ?>
