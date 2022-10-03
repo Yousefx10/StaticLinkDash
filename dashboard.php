@@ -27,6 +27,14 @@
         }
 
         .fontP{font-size: 30px;}
+
+
+
+        .schoolACTIVE
+        {
+            color:green;
+            background-color: red;
+        }
     </style>
 </head>
 <body>
@@ -53,12 +61,12 @@
     </div>
     <!--  -->
     <div style="float:right;width:69%;height:125px">
-    <span class="SchoolClass">Class E : 1</span>
-    <span class="SchoolClass">Class E : 2</span>
-    <span class="SchoolClass">Class E : 3</span>
-    <span class="SchoolClass">Class E : 4</span>
-    <span class="SchoolClass">Class E : 5</span>
-    <span class="SchoolClass">Class E : 6</span>
+    <span class="SchoolClass" onclick="SchoolClass(1)">Class E : 1</span>
+    <span class="SchoolClass" onclick="SchoolClass(2)">Class E : 2</span>
+    <span class="SchoolClass" onclick="SchoolClass(3)">Class E : 3</span>
+    <span class="SchoolClass" onclick="SchoolClass(4)">Class E : 4</span>
+    <span class="SchoolClass" onclick="SchoolClass(5)">Class E : 5</span>
+    <span class="SchoolClass" onclick="SchoolClass(6)">Class E : 6</span>
     </div>
     <!--  -->
     <div style="clear:both;"></div>
@@ -72,9 +80,9 @@
     </div>
     <!--  -->
     <div style="float:right;width:69%;height:70px">
-    <span class="SchoolClass">Class E : 1</span>
-    <span class="SchoolClass">Class E : 2</span>
-    <span class="SchoolClass">Class E : 3</span>
+    <span class="SchoolClass" onclick="SchoolClass(7)">Class E : 1</span>
+    <span class="SchoolClass" onclick="SchoolClass(8)">Class E : 2</span>
+    <span class="SchoolClass" onclick="SchoolClass(9)">Class E : 3</span>
     </div>
     <!--  -->
     <div style="clear:both;"></div>
@@ -87,9 +95,7 @@
     </div>
     <!--  -->
     <div style="float:right;width:69%;">
-    <span class="SchoolClass">Class E : 1</span>
-    <span class="SchoolClass">Class E : 2</span>
-    <span class="SchoolClass">Class E : 3</span>
+    <span class="SchoolClass" onclick="SchoolClass(10,this)">Class E : 1</span>
     </div>
     <!--  -->
     <div style="clear:both;"></div>
@@ -101,5 +107,30 @@
         <br/><br/><br/>
         <button>Save</button>
     </div>
+
+
+
+<script>
+const ActiveClasses=[];
+
+function SchoolClass(ClassNumber,nnm)
+{
+
+
+nnm.classList.toggle("schoolACTIVE");
+
+if(!(ActiveClasses.includes(ClassNumber)))
+    ActiveClasses.push(ClassNumber);
+
+
+
+
+
+console.log(ActiveClasses);
+}
+
+
+
+</script>
 </body>
 </html>
