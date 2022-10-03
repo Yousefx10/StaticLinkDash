@@ -1,7 +1,8 @@
 <?php
 
 include("connectSQL.php");
-
+$stttts =false;
+$selectedCLASS="";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $newLINK =  $_POST['newLINK'];
@@ -22,6 +23,9 @@ $con -> multi_query($sql);
 
   // Close connection
   $con->close();
+
+
+  $stttts =true;
 }
 
 ?>
@@ -67,11 +71,16 @@ $con -> multi_query($sql);
             border:2px solid #000;
         }
 
-
+        #mainButton
+        {
+            font-size: 35px;
+            background-color: #FFD700;
+            color: black;
+        }
     </style>
 </head>
 <body>
-    <div style="text-align: center;user-select: none;">
+    <div style="text-align: center;user-select: none;" id="page1">
         <h1>Zat Academy Dashboard</h1>
         
         <hr/><br/>
@@ -146,6 +155,18 @@ $con -> multi_query($sql);
     <input type="hidden" value="" id="forminput2" name="selectedCLASS"/>
 </form>
 
+
+<div style="display:none;background-color:green;color:white;width:600px;margin:auto;padding:20px" id="page2">
+        <h2>Link Chanded Successfully For This Classes :</h2>
+        
+        <div id="affectedClasses">
+
+        </div>
+
+        <a href="" style="color:white;">Back To Main Page</a>
+</div>
+
+
 <script>
 const ActiveClasses=[];
 
@@ -179,7 +200,7 @@ else
 function showme()
 {
     var whatIS = ActiveClasses.sort(function(a, b){return a - b});
-    alert(whatIS);
+    //alert(whatIS);
    document.getElementById("forminput1").value = document.getElementById("inputlink").value;
    document.getElementById("forminput2").value = whatIS;
     document.getElementById("form_data").submit();
@@ -200,14 +221,53 @@ function checkBUTTON(typeEE,whatE)
         else
         Estatus2=false;
     }
+
 if(Estatus1 && Estatus2)
     Btn.style.display="inline-block";
 else
     Btn.style.display="none";
 
+}
 
-console.log("yes");
+
+
+
+
+//function to show affected classes:
+
+function affeClass(arr)
+{
+document.getElementById("affectedClasses").innerHTML+="\n"+arr;
+
+
+}
+
+function hidepage()
+{
+document.getElementById("page1").style.display="none";
+document.getElementById("page2").style.display="block";
 }
 </script>
+
+
+<!--  -->
+<script>
+var runit=false;
+var newClas="";
+<?php 
+echo "newClas = [$selectedCLASS];";
+if($stttts) {echo"runit=true;"; echo"hidepage();";}
+else $selectedCLASS="0,0";
+?>
+
+
+if(runit)
+newClas.forEach( affeClass);
+
+
+</script>
+<!--  -->
+
+
 </body>
 </html>
