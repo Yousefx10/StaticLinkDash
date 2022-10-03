@@ -4,23 +4,10 @@ include("connectSQL.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-	// collect value of input field
-	$data = $_REQUEST['val1'];
-
-    $UserName =  $_REQUEST['val1'];
-    $last_name = $_REQUEST['last_name'];
+    $UserName =  $_POST['val1'];
+    $last_name = $_POST['last_name'];
     $sql = "INSERT INTO users  VALUES ('','$UserName')";
-
-    if(mysqli_query($conn, $sql)){
-      echo "<h3>data stored in a database successfully."
-          . " Please browse your localhost php my admin"
-          . " to view the updated data</h3>";
-
-      echo nl2br("\n$UserName");
-  } else{
-      echo "ERROR: Hush! Sorry $sql. " . mysqli_error($conn);
-  }
-   
+    mysqli_query($con, $sql)
   // Close connection
   CloseCon($conn);
 
