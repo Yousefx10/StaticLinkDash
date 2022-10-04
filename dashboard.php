@@ -84,7 +84,7 @@ $con -> multi_query($sql);
 </head>
 <body>
     <div style="text-align: center;user-select: none;" id="page1">
-        <h1>Zat Academy Dashboard</h1>
+        <h1>That Academy Dashboard</h1>
         
         <hr/><br/>
 
