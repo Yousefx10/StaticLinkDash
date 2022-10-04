@@ -332,6 +332,37 @@ switch(arr)
         case 10:
         resUlt="The Class Ten";
         break;
+
+        case 11:
+        resUlt="The Class eleven";
+        break;
+        case 12:
+        resUlt="The Class twelve";
+        break;
+        case 13:
+        resUlt="The Class thirteen";
+        break;
+        case 14:
+        resUlt="The Class fourteen";
+        break;
+        case 15:
+        resUlt="The Class fifteen";
+        break;
+        case 16:
+        resUlt="The Class sixteen";
+        break;
+        case 17:
+        resUlt="The Class seventeen";
+        break;
+        case 18:
+        resUlt="The Class eighteen";
+        break;
+        case 19:
+        resUlt="The Class nineteen";
+        break;
+        case 20:
+        resUlt="The Class twenty";
+        break;
 }
 
 
