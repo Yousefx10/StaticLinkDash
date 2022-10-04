@@ -37,7 +37,7 @@ $con -> multi_query($sql);
     <meta charset="utf-8"/>
     <title>That Academy</title>
     <link rel="icon" href="icon.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.9"> -->
 
     
     <style>
@@ -77,6 +77,9 @@ $con -> multi_query($sql);
             background-color: #FFD700;
             color: black;
         }
+        body{
+            width:100%
+        }
     </style>
 </head>
 <body>
@@ -107,6 +110,7 @@ $con -> multi_query($sql);
     <span class="SchoolClass school" onclick="SchoolClass(1,this)">Class E : 0</span>
     <span class="SchoolClass school" onclick="SchoolClass(2,this)">Class E : 0</span>
     <span class="SchoolClass school" onclick="SchoolClass(3,this)">Class E : 0</span>
+    <br/>
     <span class="SchoolClass school" onclick="SchoolClass(4,this)">Class E : 0</span>
     <span class="SchoolClass school" onclick="SchoolClass(5,this)">Class E : 0</span>
     <span class="SchoolClass school" onclick="SchoolClass(6,this)">Class E : 0</span>
@@ -144,6 +148,63 @@ $con -> multi_query($sql);
     <div style="clear:both;"></div>
     <!--  -->
 </div>
+
+
+
+<div style="width:600px;margin:auto;border:1px solid #000;padding:15px">
+
+    <!--  -->
+    <div style="float:left;width:28%;height:125px">
+
+    <p style="padding-top:30px">Elementary</p>
+
+    </div>
+    <!--  -->
+    <div style="float:right;width:69%;height:125px">
+    <span class="SchoolClass school" onclick="SchoolClass(1,this)">Class E : 0</span>
+    <span class="SchoolClass school" onclick="SchoolClass(2,this)">Class E : 0</span>
+    <span class="SchoolClass school" onclick="SchoolClass(3,this)">Class E : 0</span>
+    <br/>
+    <span class="SchoolClass school" onclick="SchoolClass(4,this)">Class E : 0</span>
+    <span class="SchoolClass school" onclick="SchoolClass(5,this)">Class E : 0</span>
+    <span class="SchoolClass school" onclick="SchoolClass(6,this)">Class E : 0</span>
+    </div>
+    <!--  -->
+    <div style="clear:both;"></div>
+    <br/><br/>
+    <!--  -->
+
+    <!--  -->
+    <div style="float:left;width:28%;height:70px">
+
+    <p>Middle</p>
+    </div>
+    <!--  -->
+    <div style="float:right;width:69%;height:70px">
+    <span class="SchoolClass school" onclick="SchoolClass(7,this)">Class E : 0</span>
+    <span class="SchoolClass school" onclick="SchoolClass(8,this)">Class E : 0</span>
+    <span class="SchoolClass school" onclick="SchoolClass(9,this)">Class E : 0</span>
+    </div>
+    <!--  -->
+    <div style="clear:both;"></div>
+    <br/>
+    <!--  -->
+    <!--  -->
+    <div style="float:left;width:28%;height:70px">
+
+    <p>High</p>
+    </div>
+    <!--  -->
+    <div style="float:right;width:69%;height:70px">
+    <span class="SchoolClass school" onclick="SchoolClass(10,this)">Class E : 0</span>
+    </div>
+    <!--  -->
+    <div style="clear:both;"></div>
+    <!--  -->
+</div>
+
+
+
 
 
 
