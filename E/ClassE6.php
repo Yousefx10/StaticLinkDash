@@ -4,8 +4,8 @@ include("../../connectSQL.php");
 
 
 
-//LINK 6
-$LINKpage = 6;
+//LINK 16
+$LINKpage = 16;
 $sql = "SELECT link_linkedto FROM onlineclasses WHERE link_id= $LINKpage ";
 
 
