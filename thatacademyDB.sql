@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 03, 2022 at 09:51 PM
+-- Generation Time: Oct 04, 2022 at 05:37 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -47,7 +47,17 @@ INSERT INTO `onlineclasses` (`link_id`, `link_name`, `link_linkedto`) VALUES
 (7, 'Class7', ''),
 (8, 'Class8', ''),
 (9, 'Class9', ''),
-(10, 'Class10', '');
+(10, 'Class10', ''),
+(11, 'Class11', ''),
+(12, 'Class12', ''),
+(13, 'Class13', ''),
+(14, 'Class14', ''),
+(15, 'Class15', ''),
+(16, 'Class16', ''),
+(17, 'Class17', ''),
+(18, 'Class18', ''),
+(19, 'Class19', ''),
+(20, 'Class20', '');
 
 --
 -- Indexes for dumped tables
@@ -67,7 +77,7 @@ ALTER TABLE `onlineclasses`
 -- AUTO_INCREMENT for table `onlineclasses`
 --
 ALTER TABLE `onlineclasses`
-  MODIFY `link_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `link_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
