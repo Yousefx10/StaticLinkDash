@@ -97,7 +97,7 @@ $con -> multi_query($sql);
         <p class="fontP">Select The Classes :</p>
 
 
-<div style="width:600px;margin:auto;border:1px solid #000;padding:15px">
+<div style="background:#e9e9e9;width:600px;margin:auto;border:1px solid #000;padding:15px">
 <p>Arabic Classes</p>
     <!--  -->
     <div style="float:left;width:28%;min-height:125px">
