@@ -1,6 +1,8 @@
 <?php
 
 include("connectSQL.php");
+include("password.php");
+
 $stttts =false;
 $selectedCLASS="";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -77,15 +79,55 @@ $con -> multi_query($sql);
             background-color: #FFD700;
             color: black;
         }
-        body{
-            width:100%
-        }
+
     </style>
+
+
+
+
 </head>
 <body>
+
+<form action="" method="post" id="form_data">
+    <input type="hidden" value="" id="forminput1" name="newLINK"/>
+    <input type="hidden" value="" id="forminput2" name="selectedCLASS"/>
+</form>
+
+
     <div style="text-align: center;user-select: none;" id="page1">
         <h1>That Academy Dashboard</h1>
-        
+
+
+
+    <script>
+//password function
+function checkpass(gimmePASS)
+{
+    var hi = prompt("Please Enter The Password Below :");
+
+    if (hi==null || hi =="" || hi != gimmePASS){
+         document.getElementById("page1").remove();
+
+
+   var tag = document.createElement("label");
+   var text = document.createTextNode("password it totally wrong...");
+   tag.appendChild(text);
+   
+   var element = document.getElementById("form_data");
+   element.appendChild(tag);
+    }
+
+}
+<?php
+    if($is_pass_Active)
+    echo "checkpass(".$Thepassword.");";
+?>
+
+
+    </script>
+
+
+
         <hr/><br/>
 
 
@@ -212,10 +254,7 @@ $con -> multi_query($sql);
         <button style="display:none"onclick="showme()" id="mainButton">Save</button>
     </div>
 
-<form action="" method="post" id="form_data">
-    <input type="hidden" value="" id="forminput1" name="newLINK"/>
-    <input type="hidden" value="" id="forminput2" name="selectedCLASS"/>
-</form>
+
 
 
 <div style="display:none;background-color:green;color:white;width:600px;margin:auto;padding:20px" id="page2">
@@ -227,7 +266,6 @@ $con -> multi_query($sql);
         <br/><br/><br/>
         <a href="" style="color:white;">Back To Main Page</a>
 </div>
-
 
 <script>
 const ActiveClasses=[];
