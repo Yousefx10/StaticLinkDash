@@ -79,7 +79,10 @@ $con -> multi_query($sql);
             background-color: #FFD700;
             color: black;
         }
-
+.pFont
+{
+    font-size:19px;
+}
     </style>
 
 
@@ -112,7 +115,7 @@ function checkpass(gimmePASS)
    var tag = document.createElement("label");
    var text = document.createTextNode("password it totally wrong...");
    tag.appendChild(text);
-   
+
    var element = document.getElementById("form_data");
    element.appendChild(tag);
     }
@@ -144,7 +147,7 @@ function checkpass(gimmePASS)
     <!--  -->
     <div style="float:left;width:28%;min-height:125px">
 
-    <p style="padding-top:30px">Elementary</p>
+    <p style="padding-top:30px;" class="pFont">Elementary</p>
 
     </div>
     <!--  -->
@@ -165,7 +168,7 @@ function checkpass(gimmePASS)
     <!--  -->
     <div style="float:left;width:28%;min-height:70px">
 
-    <p>Middle</p>
+    <p class="pFont">Middle</p>
     </div>
     <!--  -->
     <div style="float:right;width:69%;min-height:70px">
@@ -180,7 +183,7 @@ function checkpass(gimmePASS)
     <!--  -->
     <div style="float:left;width:28%;min-height:70px">
 
-    <p>High</p>
+    <p class="pFont">High</p>
     </div>
     <!--  -->
     <div style="float:right;width:69%;min-height:70px">
@@ -198,7 +201,7 @@ function checkpass(gimmePASS)
     <!--  -->
     <div style="float:left;width:28%;min-height:125px">
 
-    <p style="padding-top:30px">Elementary</p>
+    <p style="padding-top:30px" class="pFont">Elementary</p>
 
     </div>
     <!--  -->
@@ -219,7 +222,7 @@ function checkpass(gimmePASS)
     <!--  -->
     <div style="float:left;width:28%;min-height:70px">
 
-    <p>Middle</p>
+    <p class="pFont">Middle</p>
     </div>
     <!--  -->
     <div style="float:right;width:69%;min-height:70px">
@@ -234,7 +237,7 @@ function checkpass(gimmePASS)
     <!--  -->
     <div style="float:left;width:28%;min-height:70px">
 
-    <p>High</p>
+    <p class="pFont">High</p>
     </div>
     <!--  -->
     <div style="float:right;width:69%;min-height:70px">
