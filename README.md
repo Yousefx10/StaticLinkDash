@@ -43,7 +43,12 @@ INSERT INTO `onlineclasses`(  `link_name`, `link_linkedto`) VALUES ( 'Class18','
 INSERT INTO `onlineclasses`(  `link_name`, `link_linkedto`) VALUES ( 'Class19','');
 INSERT INTO `onlineclasses`(  `link_name`, `link_linkedto`) VALUES ( 'Class20','');
 ```
+or if you are into sql , you can use this shorter way :
+```sql
+INSERT INTO `onlineclasses` (`link_id`, `link_name`, `link_linkedto`) VALUES
+(1, 'Class1', ''),(2, 'Class2', ''),(3, 'Class3', '');
 
+```
 
 ## How To Edit Sql Connection Data :
 
