@@ -50,10 +50,35 @@ Just Open The `connectSQL.php` File , Then :
 Change The `$con` Variable to Your Database host information.
 
 
-## Features
+## How To Change Password :
 
+You Can Change The Password, it's all on server , so user wont know the password Variable.
+
+Open `password.php` File , Then :
+
+Edit `$Thepassword` Variable To New Password.
+
+
+## How To Turn Password on and off:
+
+Open `password.php` File , Then :
+
+Edit `$is_pass_Active` Variable To false/true.
+
+true: Asking For password everytime You Open the dashboard.
+
+false: Never Ask For The password.
+
+
+## Features
+- Secure With Password.
 - Easy Change Your Links
 - Easy Name The Links
 - Up To 20 Link Is Ready To Go
 - Simple HTML Dashboard.
+
+
+## About Author
+
+- [@YousefHurf](https://fb.com/yousef.my10)
 
