@@ -15,7 +15,11 @@ php for server , web Browser language [html-css-js] , with Mysql DB Server.
 
 Yes you can , no matter where's directory are.
 
-## How To Insert More Links To DataBase ?
+#### is it safe to use?
+
+yes you can set your own password easly.
+
+## How To Insert More Links To Database ?
 this is how the first 20 links are built in sql
 ```sql
 INSERT INTO `onlineclasses`(  `link_name`, `link_linkedto`) VALUES ( 'Class1','');
@@ -78,7 +82,7 @@ false: Never Ask For The password.
 - Simple HTML Dashboard.
 
 
-## About Author
+## About The Author
 
 - [@YousefHurf](https://fb.com/yousef.my10)
 
