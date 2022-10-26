@@ -20,7 +20,7 @@ Yes you can , no matter where's directory are.
 yes you can set your own password easly.
 
 #### Should To Know :
-url Are shorten Because The Functions Are Writted in .htaccess file
+URL Are shorten Because The Functions Are Written in .htaccess file
 
 ## How To Insert More Links To Database ?
 this is how the first 20 links are built in sql
