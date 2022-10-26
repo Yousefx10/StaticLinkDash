@@ -88,7 +88,7 @@ false: Never Ask For The password.
 - Easy Name The Links.
 - Up To 20 Link Is Ready To Go.
 - Simple HTML Dashboard.
-- UEL extension are short.
+- URL extension without(.php/.html)
 
 ## About The Author
 
