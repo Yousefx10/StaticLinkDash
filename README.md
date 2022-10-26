@@ -19,6 +19,9 @@ Yes you can , no matter where's directory are.
 
 yes you can set your own password easly.
 
+#### Should To Know :
+url Are shorten Because The Functions Are Writted in .htaccess file
+
 ## How To Insert More Links To Database ?
 this is how the first 20 links are built in sql
 ```sql
@@ -80,12 +83,12 @@ false: Never Ask For The password.
 
 
 ## Features
-- Secure With Password.
+- Secure With Password..
 - Easy Change Your Links
-- Easy Name The Links
-- Up To 20 Link Is Ready To Go
+- Easy Name The Links.
+- Up To 20 Link Is Ready To Go.
 - Simple HTML Dashboard.
-
+- UEL extension are short.
 
 ## About The Author
 
