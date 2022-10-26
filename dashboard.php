@@ -99,7 +99,7 @@ $con -> multi_query($sql);
 
     <div style="text-align: center;user-select: none;" id="page1">
         <h1>That Academy Dashboard</h1>
-
+		<h2 style="font-weight:normal">Welcome To The Dashboard</h2>
 
 
     <script>
